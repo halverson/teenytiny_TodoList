@@ -9,6 +9,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="js/ListScript.js"></script>
         <script src="http://use.edgefonts.net/poly:i4,n4:all;source-sans-pro:n4,n9,n7,i7,i4,n3,i3,n6,i6,i9,n2,i2:all.js"></script>
     </head>
     
@@ -18,12 +20,12 @@
             
             <h1 class="pageTitle">Mr. Nygaard Gets Things Done</h1>
                 <div class="listWrapper">
-                    <input class="textInp titleInp" type="text" placeholder="Title..." value="My List"><br/>
+                    <input class="textInp titleInp" type="text" placeholder="My List"><br/>
 
                     <button class="addItem myBtn">Add Another Item</button>
                     <button class="updateList myBtn">Update List</button>
 
-                    <ul>
+                    <ul class="mainList">
                         <li class="listItem">
                             <input class="checkBox" type="checkbox">
                             <input class="textInp" type="text" placeholder="...">

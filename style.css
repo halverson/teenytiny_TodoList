@@ -39,6 +39,7 @@ ul {
 }
 
 h1 {
+    margin: 0.8em;
     font-family: source-sans-pro;
     font-size: 2.5em;
     font-weight: 800;
@@ -113,4 +114,8 @@ li {
 
 :-ms-input-placeholder {
     color: #b2a98d;
+}
+
+.checkBox {
+    margin-right: 1em;
 }

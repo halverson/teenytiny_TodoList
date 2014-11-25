@@ -14,6 +14,18 @@ ul {
     margin: 0;
 }
 
+li {
+    margin-top: 1em;
+}
+
+h1 {
+    margin: 0;
+    font-family: source-sans-pro;
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #374140;
+}
+
 ::-moz-selection {
     color: #fff;
     background: #DC3522;
@@ -22,6 +34,22 @@ ul {
 ::selection {
     color: #fff;
     background: #DC3522;
+}
+
+::-webkit-input-placeholder {
+    color: #b2a98d;
+}
+
+:-moz-placeholder {
+    color: #b2a98d;
+}
+
+::-moz-placeholder {
+    color: #b2a98d;
+}
+
+:-ms-input-placeholder {
+    color: #b2a98d;
 }
 
 .wrapper {
@@ -36,14 +64,7 @@ ul {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-}
-
-h1 {
-    margin: 0.8em;
-    font-family: source-sans-pro;
-    font-size: 2.5em;
-    font-weight: 800;
-    color: #374140;
+    margin: 1em;
 }
 
 .listWrapper {
@@ -77,10 +98,6 @@ h1 {
     background-color: #374140;
 }
 
-li {
-    margin-top: 1em;
-}
-
 .textInp {
     padding: 10px;
     
@@ -96,24 +113,9 @@ li {
 }
 
 .titleInp {
+    margin-top: 1em;
     font-size: 1.5em;
     font-weight: 800;
-}
-
-::-webkit-input-placeholder {
-    color: #b2a98d;
-}
-
-:-moz-placeholder {
-    color: #b2a98d;
-}
-
-::-moz-placeholder {
-    color: #b2a98d;
-}
-
-:-ms-input-placeholder {
-    color: #b2a98d;
 }
 
 .checkBox {

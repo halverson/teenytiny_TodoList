@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
     var addItem = function() {
-      $('.mainList').append('<li class="listItem"><input class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="..."></li>');
+      $('.mainList').append('<li class="listItem"><input id="check" class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="Add Item..."></li>');
     };
-
-    var remItem = function() {
-      var isChecked = $("input[type='checkbox']:checked");
-      isChecked.parent().remove();
-    };
-
-    $('.addItem').click(addItem);
-
-    $('.updateList').click(remItem);
     
+    var itemDone = function() {
+        var $this = $(this);
+        $this.parent().fadeOut(600, function() {
+            $this.parent().remove();
+        });
+    };
+    
+    $('.mainList').on('click', '#check', itemDone);
+    $('.addItem').click(addItem);
 });

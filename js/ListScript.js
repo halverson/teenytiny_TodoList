@@ -4,14 +4,7 @@ $(document).ready(function() {
       $('.mainList').append('<li class="listItem"><input id="check" class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="..."></li>');
     };
     
-    /*var donE = function() {
-        var checkED = $("input[type='checkbox']");
-        if (checkED.is(':checked')) {
-            checkED.parent().remove();
-        }
-    };*/
-    
-    var Massage = function() {
+    var itemDone = function() {
         if ($(this).is(':checked')) {
             alert("Checked!");
         } else {
@@ -19,6 +12,6 @@ $(document).ready(function() {
         }
     };
     
-    $('.mainList').on('click', '#check', Massage);
+    $('.mainList').on('click', '#check', itemDone);
     $('.addItem').click(addItem);
 });

@@ -37,24 +37,15 @@ li {
             align-items: center;
 }
 
-h1, h2 {
+h1 {
     margin: 0;
     margin-top: 1em;
     text-align: center;
     font-family: source-sans-pro;
     color: #374140;
-}
-
-h1 {
     font-size: 2.5em;
     font-weight: 800;
 }
-
-h2 {
-    font-size: 1.4em;
-    font-weight: 800;
-}
-
 
 
 /*---------------------- START CHECKBOX STYLES -----------------------*/
@@ -67,13 +58,13 @@ h2 {
 
 .checkBox[type="checkbox"]:before{
     position: relative;
-    box-sizing: border-box;
     display: block;
+    box-sizing: border-box;
     width: 18px;
     height: 18px;
+    content: "";
     border: 1px solid #b9ab81;
     border-radius: 2px;
-    content: "";
     background: #D9CB9E;
 }
 
@@ -183,6 +174,7 @@ h2 {
 }
 
 .myBtn {
+    box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -196,16 +188,16 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
     
-    width: 1.3em;
-    height: 1.3em;
+    width: 25px;
+    height: 40px;
     
     padding: 0;
     margin: 0;
+    margin-left: 0.5em;
     
     font-family: source-sans-pro;
-    font-size: 1em;
     font-weight: 600;
-    color: #374140;
+    font-size: 1.1em;
     
     background-color: rgba(255, 255, 255, 0);
     border: solid 1px #374140;
@@ -229,6 +221,7 @@ h2 {
 .textInp {
     box-sizing: border-box;
     width: 100%;
+    max-height: 40px;
     padding: 0.4em;
     
     font-family: source-sans-pro;

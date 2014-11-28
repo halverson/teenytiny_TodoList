@@ -22,12 +22,18 @@
             <h1 class="pageTitle">Get Stuff Done</h1>
             
             <div class="listWrapper">
-                <input class="textInp titleInp" type="text" placeholder="My List">
+                <input class="textInp titleInp" type="text" placeholder="My List Title...">
 
                 <ul class="mainList">
-                    <li class="listItem"><input id="check" class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="Add Item..."></li>
+                    <li class="listItem">
+                        <input class="checkBox" type="checkbox">
+                        <input class="textInp" type="text" placeholder="Add Item..." value="">
+                        <p class="remItem myBtn">-</p>
+                    </li>
                 </ul>
-                <div class="addItem myBtn">+</div>
+                
+                <ul class="doneList"></ul>
+                
             </div>
             
         </div>

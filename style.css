@@ -42,10 +42,73 @@ h1 {
     margin-top: 1em;
     text-align: center;
     font-family: source-sans-pro;
+    color: #374140;
     font-size: 2.5em;
     font-weight: 800;
-    color: #374140;
 }
+
+
+/*---------------------- START CHECKBOX STYLES -----------------------*/
+
+
+
+.checkBox {
+    margin-right: 1em;
+}
+
+.checkBox[type="checkbox"]:before{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    content: "";
+    border: 1px solid #b9ab81;
+    border-radius: 2px;
+    background: #D9CB9E;
+}
+
+.checkBox[type="checkbox"]:after{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    left: 3px;
+    top: -15px;
+    width: 12px;
+    height: 12px;
+    content: "";
+    background-image: -webkit-linear-gradient(90deg, #D9CB9E 0%, #D9CB9E 100%);
+    background-image: linear-gradient(0deg, #D9CB9E 0%,#D9CB9E 100%);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.checkBox[type="checkbox"]:checked:after{
+    background-image: -webkit-linear-gradient(90deg, #b9ab81 0%, #b9ab81 100%);
+    background-image: linear-gradient(0deg, #b9ab81 0%,#b9ab81 100%);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.checkBox[type="checkbox"]:hover:after{
+    background-image: -webkit-linear-gradient(90deg, #cbbb89 0%, #cbbb89 100%);
+    background-image: linear-gradient(0deg, #cbbb89 0%,#cbbb89 100%);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.checkBox[type="checkbox"]:checked:hover:after{
+    background-image: -webkit-linear-gradient(90deg, #9d8f66 0%, #9d8f66 100%);
+    background-image: linear-gradient(0deg, #9d8f66 0%,#9d8f66 100%);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+
+
+/*---------------------- END CHECKBOX STYLES -----------------------*/
+
+
 
 ::-moz-selection {
     color: #fff;
@@ -111,22 +174,36 @@ h1 {
 }
 
 .myBtn {
-    margin: 0;
-    margin-top: 1em;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+    width: 25px;
+    height: 40px;
+    
     padding: 0;
-    text-align: center;
+    margin: 0;
+    margin-left: 0.5em;
     
     font-family: source-sans-pro;
-    font-size: 1.5em;
-    font-weight: 800;
-    color: #374140;
+    font-weight: 600;
+    font-size: 1.1em;
     
     background-color: rgba(255, 255, 255, 0);
     border: solid 1px #374140;
     border-radius: 2px;
     
     -webkit-transition: all 0.2s ease;
-    
             transition: all 0.2s ease;
 }
 
@@ -141,16 +218,10 @@ h1 {
     background-color: #374140;
 }
 
-.addItem {
-    -webkit-align-self: flex-end;
-        -ms-flex-item-align: end;
-            align-self: flex-end;
-    width: 2em;
-}
-
 .textInp {
     box-sizing: border-box;
     width: 100%;
+    max-height: 40px;
     padding: 0.4em;
     
     font-family: source-sans-pro;
@@ -172,6 +243,18 @@ h1 {
     font-weight: 800;
 }
 
-.checkBox {
-    margin-right: 1em;
+.listItemA {
+    display: none;
+}
+
+.mainList {
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #baad86;
+}
+
+.doneList input[type="text"] {
+    background-color: #cbbd93;
+    text-decoration: line-through;
+    color: #918663;
 }

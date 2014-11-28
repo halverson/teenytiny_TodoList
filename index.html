@@ -25,9 +25,22 @@
                 <input class="textInp titleInp" type="text" placeholder="My List">
 
                 <ul class="mainList">
-                    <li class="listItem"><input id="check" class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="Add Item..."></li>
+                    <li class="listItem">
+                        <div class="checkbox">
+                            <input id="check" class="checkBox" type="checkbox">
+                            <label for="checkBox"></label>
+                        </div>
+                        <input class="textInp" type="text" placeholder="Add Item...">
+                    </li>
                 </ul>
                 <div class="addItem myBtn">+</div>
+                
+                <h2>Completed</h2>
+                
+                <ul class="doneList">
+                    <li class="listItem"><div class="checkbox"><input id="checkDone" class="checkBoX" type="checkbox"><label for="checkBoX"></label></div><input class="textInp" type="text" placeholder="Add Item..."></li>
+                </ul>
+                
             </div>
             
         </div>

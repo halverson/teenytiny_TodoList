@@ -1,9 +1,8 @@
 $(document).ready(function() {
 
     var addItem = function() {
-        var newItem = $('<li class="listItemA"><input class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="Add Item..."><p class="remItem myBtn">-</p></li>');
+        var newItem = $('<li class="listItem"><input class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="Add Item..."><p class="remItem myBtn">-</p></li>');
         $('.mainList').append(newItem);
-        newItem.fadeIn(300);
     };
     
     var delItem = function() {

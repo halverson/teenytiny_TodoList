@@ -15,7 +15,7 @@ ul {
     width: 100%;
 }
 
-li {
+.listItem {
     margin: 0;
     margin-top: 1em;
     display: -webkit-box;
@@ -221,7 +221,6 @@ h1 {
 .textInp {
     box-sizing: border-box;
     width: 100%;
-    max-height: 40px;
     padding: 0.4em;
     
     font-family: source-sans-pro;

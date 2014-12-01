@@ -121,19 +121,19 @@ h1 {
 }
 
 ::-webkit-input-placeholder {
-    color: #b2a98d;
+    color: #bead7b;
 }
 
 :-moz-placeholder {
-    color: #b2a98d;
+    color: #e5d8b0;
 }
 
 ::-moz-placeholder {
-    color: #b2a98d;
+    color: #e5d8b0;
 }
 
 :-ms-input-placeholder {
-    color: #b2a98d;
+    color: #e5d8b0;
 }
 
 .wrapper {
@@ -229,10 +229,15 @@ h1 {
     font-weight: 500;
     
     color: #374140;
-    background-color: #e5d8b0;
+    background-color: #D9CB9E;
     
     border: none;
     border-radius: 2px;
+}
+
+.textInp:focus {
+    background-color: #e5dab9;
+    outline: none;
 }
 
 .titleInp {

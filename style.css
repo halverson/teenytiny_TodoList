@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-size: 16px;
 }
 
@@ -37,14 +38,37 @@ ul {
             align-items: center;
 }
 
-h1 {
+h1, h2, h3, h4 {
     margin: 0;
-    margin-top: 1em;
-    text-align: center;
     font-family: droid-serif;
     color: #3a3f57;
+}
+
+a {
+    font-family: lato;
+    text-decoration: none;
+    color: #348899;
+}
+
+a:hover {
+    color: #196372;
+    text-decoration: underline;
+}
+
+h1 {
+    margin-top: 1em;
+    text-align: center;
     font-size: 3em;
     font-weight: 600;
+}
+
+h3, h4 {
+    color: #F2EBC7;
+}
+
+h4 {
+    font-weight: 100;
+    margin-top: 1em;
 }
 
 
@@ -171,6 +195,25 @@ h1 {
             align-items: flex-start;
     width: 100%;
     padding: 1em;
+}
+
+.footer {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 2em;
+    background-color: #d4cda8;
 }
 
 .myBtn {

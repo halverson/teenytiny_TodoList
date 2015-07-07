@@ -65,6 +65,7 @@ a {
     font-family: lato;
     text-decoration: none;
     color: #348899;
+    margin-top: 1em;
 }
 
 a:hover {
@@ -80,7 +81,7 @@ h1 {
 }
 
 h3, h4 {
-    color: #F2EBC7;
+    color: #f7f2da;
 }
 
 h4 {
@@ -219,6 +220,14 @@ h4 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;

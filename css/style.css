@@ -57,12 +57,12 @@ ul {
 
 h1, h2, h3, h4 {
     margin: 0;
-    font-family: droid-serif;
+    font-family: "times new roman";
     color: #3a3f57;
 }
 
 a {
-    font-family: lato;
+    font-family: trebuchet-ms, "trebuchet ms";
     text-decoration: none;
     color: #348899;
     margin-top: 1em;
@@ -263,7 +263,7 @@ h4 {
     margin: 0;
     margin-left: 0.5em;
     
-    font-family: lato;
+    font-family: trebuchet-ms, "trebuchet ms";
     font-weight: 400;
     font-size: 1.1em;
     color: #cbc39e;
@@ -290,7 +290,7 @@ h4 {
     width: 100%;
     padding: 0.4em;
     
-    font-family: lato;
+    font-family: trebuchet-ms, "trebuchet ms";
     font-size: 1.3em;
     font-weight: 300;
     

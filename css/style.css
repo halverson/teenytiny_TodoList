@@ -57,12 +57,12 @@ ul {
 
 h1, h2, h3, h4 {
     margin: 0;
-    font-family: "times new roman";
+    font-family: "times new roman", serif;
     color: #3a3f57;
 }
 
 a {
-    font-family: trebuchet-ms, "trebuchet ms";
+    font-family: trebuchet-ms, "trebuchet ms", sans-serif;
     text-decoration: none;
     color: #348899;
     margin-top: 1em;
@@ -192,14 +192,13 @@ h4 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 40em;
 }
 
 .listWrapper {
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
-    display: -ms-flexbox; 
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -255,22 +254,22 @@ h4 {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    
+
     width: 25px;
     height: 40px;
-    
+
     padding: 0;
     margin: 0;
     margin-left: 0.5em;
-    
-    font-family: trebuchet-ms, "trebuchet ms";
+
+    font-family: trebuchet-ms, "trebuchet ms", sans-serif;
     font-weight: 400;
     font-size: 1.1em;
     color: #cbc39e;
-    
+
     background-color: rgba(255, 255, 255, 0);
     border-radius: 2px;
-    
+
     -webkit-transition: all 0.2s ease;
             transition: all 0.2s ease;
 }
@@ -289,14 +288,14 @@ h4 {
     box-sizing: border-box;
     width: 100%;
     padding: 0.4em;
-    
-    font-family: trebuchet-ms, "trebuchet ms";
+
+    font-family: trebuchet-ms, "trebuchet ms", sans-serif;
     font-size: 1.3em;
     font-weight: 300;
-    
+
     color: #3a3f57;
     background-color: #F2EBC7;
-    
+
     border: none;
     border-radius: 2px;
 }
@@ -309,7 +308,7 @@ h4 {
 .titleInp {
     margin-top: 1em;
     text-align: center;
-    
+
     font-size: 1.5em;
     font-weight: 300;
 }

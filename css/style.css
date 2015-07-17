@@ -7,23 +7,6 @@ html, body {
 
 body {
     background-color: #F2EBC7;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 100vh;
 }
 
@@ -37,23 +20,6 @@ ul {
 .listItem {
     margin: 0;
     margin-top: 1em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 
 h1, h2, h3, h4 {
@@ -94,7 +60,7 @@ h4 {
 /*---------------------- START CHECKBOX STYLES -----------------------*/
 
 
-
+/*
 .checkBox {
     margin-right: 1em;
 }
@@ -146,7 +112,7 @@ h4 {
     background-repeat: no-repeat;
     background-position:center;
 }
-
+*/
 
 
 /*---------------------- END CHECKBOX STYLES -----------------------*/
@@ -180,36 +146,11 @@ h4 {
 }
 
 .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+
 }
 
 .listWrapper {
     box-sizing: border-box;
-    /*display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;*/
     width: 100%;
     padding: 1em;
 }
@@ -259,10 +200,6 @@ h4 {
     width: 25px;
     height: 40px;
 
-    padding: 0;
-    margin: 0;
-    margin-left: 0.5em;
-
     font-family: trebuchet-ms, "trebuchet ms", sans-serif;
     font-weight: 400;
     font-size: 1.1em;
@@ -287,7 +224,6 @@ h4 {
 
 .textInp {
     box-sizing: border-box;
-    width: 100%;
     padding: 0.4em;
 
     font-family: trebuchet-ms, "trebuchet ms", sans-serif;
@@ -307,7 +243,6 @@ h4 {
 }
 
 .titleInp {
-    margin-top: 1em;
     text-align: center;
 
     font-size: 1.5em;

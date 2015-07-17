@@ -24,6 +24,7 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100vh;
 }
 
 ul {
@@ -196,7 +197,7 @@ h4 {
 
 .listWrapper {
     box-sizing: border-box;
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -208,7 +209,7 @@ h4 {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
-            align-items: flex-start;
+            align-items: flex-start;*/
     width: 100%;
     padding: 1em;
 }

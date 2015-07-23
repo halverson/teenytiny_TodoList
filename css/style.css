@@ -25,7 +25,6 @@ ul {
 h1, h2, h3, h4 {
     margin: 0;
     font-family: "times new roman", serif;
-    color: #3a3f57;
 }
 
 a {
@@ -41,10 +40,11 @@ a:hover {
 }
 
 h1 {
-    margin-top: 1em;
     text-align: center;
     font-size: 3em;
     font-weight: 600;
+    margin-top: 1em;
+    color: #3a3f57;
 }
 
 h3, h4 {
@@ -55,69 +55,6 @@ h4 {
     font-weight: 100;
     margin-top: 1em;
 }
-
-
-/*---------------------- START CHECKBOX STYLES -----------------------*/
-
-
-/*
-.checkBox {
-    margin-right: 1em;
-}
-
-.checkBox[type="checkbox"]::before {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    width: 18px;
-    height: 18px;
-    content: "";
-    border: 1px solid #277281;
-    border-radius: 2px;
-    background: #4bb0c4;
-}
-
-.checkBox[type="checkbox"]::after {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    left: 3px;
-    top: -15px;
-    width: 12px;
-    height: 12px;
-    content: "";
-    background-image: -webkit-linear-gradient(90deg, #429daf 0%, #429daf 100%);
-    background-image: linear-gradient(0deg, #429daf 0%,#429daf 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-.checkBox[type="checkbox"]:checked::after {
-    background-image: -webkit-linear-gradient(90deg, #277281 0%, #277281 100%);
-    background-image: linear-gradient(0deg, #277281 0%,#277281 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-.checkBox[type="checkbox"]:hover::after {
-    background-image: -webkit-linear-gradient(90deg, #2f7d8d 0%, #2f7d8d 100%);
-    background-image: linear-gradient(0deg, #2f7d8d 0%,#2f7d8d 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-.checkBox[type="checkbox"]:checked:hover::after {
-    background-image: -webkit-linear-gradient(90deg, #277281 0%, #277281 100%);
-    background-image: linear-gradient(0deg, #277281 0%,#277281 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-*/
-
-
-/*---------------------- END CHECKBOX STYLES -----------------------*/
-
-
 
 ::-moz-selection {
     color: #fff;
@@ -146,7 +83,6 @@ h4 {
 }
 
 .wrapper {
-
 }
 
 .listWrapper {
@@ -208,8 +144,8 @@ h4 {
     background-color: rgba(255, 255, 255, 0);
     border-radius: 2px;
 
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    -webkit-transition: all 0.1s ease;
+            transition: all 0.1s ease;
 }
 
 .myBtn:hover {

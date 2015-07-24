@@ -28,8 +28,6 @@ ul {
 }
 
 .listItem {
-    margin: 0;
-    margin-top: 1em;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -48,7 +46,9 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     max-width: 780px;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
 }
 
 #addItem {
@@ -119,6 +119,11 @@ h4 {
 }
 
 .wrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-height: 300px;
 }
 
 .listWrapper {
@@ -192,12 +197,19 @@ h4 {
 
 .mainList {
     margin-bottom: 1em;
+    margin: auto;
     padding-bottom: 2em;
     border-bottom: 1px solid #d9d1ac;
+    max-width: 780px;
 }
 
 .doneList input[type="text"] {
     background-color: #d9d1ac;
     text-decoration: line-through;
     color: #a59f82;
+}
+
+.footer {
+    text-align: center;
+    z-index: -50;
 }

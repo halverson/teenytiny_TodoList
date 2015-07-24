@@ -11,10 +11,6 @@ module.exports = function(grunt) {
         ],
         dest: 'js/build/production.js',
       },
-      styles: {
-        src: ['css/*.css'],
-        dest: 'css/build/production.css',
-      },
     },
 
     uglify: {

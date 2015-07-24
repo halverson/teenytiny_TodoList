@@ -11,10 +11,6 @@ module.exports = function(grunt) {
         ],
         dest: 'js/build/production.js',
       },
-      styles: {
-        src: ['css/*.css'],
-        dest: 'css/build/production.css',
-      },
     },
 
     uglify: {
@@ -28,8 +24,8 @@ module.exports = function(grunt) {
       target: {
         files: [{
             expand: true,
-            cwd: 'css/build',
-            src: ['*.css', '!*.min.css'],
+            cwd: 'css/',
+            src: ['*.css'],
             dest: 'css/build',
             ext: '.min.css',
         }],

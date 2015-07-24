@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     var addItem = function () {
-        var newItem = $('<li class="listItem"><input class="checkBox" type="checkbox"><input class="textInp" type="text" placeholder="Add Item..."><p class="remItem myBtn">x</p></li>');
+        var newItem = $('<li class="listItem"><input class="checkBox" type="checkbox"><input class="textInp" id="addItem" type="text" placeholder="Add Item..." value=""><input class="remItem myBtn" type="button" value="x"></li>');
         $('.mainList').append(newItem);
     };
     

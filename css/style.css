@@ -6,7 +6,6 @@ html, body {
 }
 
 body {
-    background-color: #F2EBC7;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -16,14 +15,8 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    
+    background-color: #F2EBC7;
     height: 100vh;
 }
 
@@ -35,8 +28,6 @@ ul {
 }
 
 .listItem {
-    margin: 0;
-    margin-top: 1em;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -54,12 +45,22 @@ ul {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+}
+
+#addItem {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 
 h1, h2, h3, h4 {
     margin: 0;
     font-family: "times new roman", serif;
-    color: #3a3f57;
 }
 
 a {
@@ -75,10 +76,11 @@ a:hover {
 }
 
 h1 {
-    margin-top: 1em;
     text-align: center;
     font-size: 3em;
     font-weight: 600;
+    margin-top: 1em;
+    color: #3a3f57;
 }
 
 h3, h4 {
@@ -89,69 +91,6 @@ h4 {
     font-weight: 100;
     margin-top: 1em;
 }
-
-
-/*---------------------- START CHECKBOX STYLES -----------------------*/
-
-
-
-.checkBox {
-    margin-right: 1em;
-}
-
-.checkBox[type="checkbox"]::before {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    width: 18px;
-    height: 18px;
-    content: "";
-    border: 1px solid #277281;
-    border-radius: 2px;
-    background: #4bb0c4;
-}
-
-.checkBox[type="checkbox"]::after {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    left: 3px;
-    top: -15px;
-    width: 12px;
-    height: 12px;
-    content: "";
-    background-image: -webkit-linear-gradient(90deg, #429daf 0%, #429daf 100%);
-    background-image: linear-gradient(0deg, #429daf 0%,#429daf 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-.checkBox[type="checkbox"]:checked::after {
-    background-image: -webkit-linear-gradient(90deg, #277281 0%, #277281 100%);
-    background-image: linear-gradient(0deg, #277281 0%,#277281 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-.checkBox[type="checkbox"]:hover::after {
-    background-image: -webkit-linear-gradient(90deg, #2f7d8d 0%, #2f7d8d 100%);
-    background-image: linear-gradient(0deg, #2f7d8d 0%,#2f7d8d 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-.checkBox[type="checkbox"]:checked:hover::after {
-    background-image: -webkit-linear-gradient(90deg, #277281 0%, #277281 100%);
-    background-image: linear-gradient(0deg, #277281 0%,#277281 100%);
-    background-repeat: no-repeat;
-    background-position:center;
-}
-
-
-
-/*---------------------- END CHECKBOX STYLES -----------------------*/
-
-
 
 ::-moz-selection {
     color: #fff;
@@ -180,99 +119,43 @@ h4 {
 }
 
 .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    min-height: 300px;
 }
 
 .listWrapper {
     box-sizing: border-box;
-    /*display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;*/
     width: 100%;
     padding: 1em;
+    text-align: center;
 }
 
 .footer {
     box-sizing: border-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
     padding: 2em;
     background-color: #d4cda8;
 }
 
 .myBtn {
-    box-sizing: border-box;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-
     width: 25px;
     height: 40px;
-
-    padding: 0;
-    margin: 0;
-    margin-left: 0.5em;
 
     font-family: trebuchet-ms, "trebuchet ms", sans-serif;
     font-weight: 400;
     font-size: 1.1em;
+    text-align: center;
     color: #cbc39e;
-
+    
+    border-style: none;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 2px;
 
-    -webkit-transition: all 0.2s ease;
-            transition: all 0.2s ease;
+    -webkit-transition: all 0.1s ease;
+            transition: all 0.1s ease;
 }
 
 .myBtn:hover {
@@ -287,7 +170,6 @@ h4 {
 
 .textInp {
     box-sizing: border-box;
-    width: 100%;
     padding: 0.4em;
 
     font-family: trebuchet-ms, "trebuchet ms", sans-serif;
@@ -307,7 +189,6 @@ h4 {
 }
 
 .titleInp {
-    margin-top: 1em;
     text-align: center;
 
     font-size: 1.5em;
@@ -316,12 +197,19 @@ h4 {
 
 .mainList {
     margin-bottom: 1em;
+    margin: auto;
     padding-bottom: 2em;
     border-bottom: 1px solid #d9d1ac;
+    max-width: 780px;
 }
 
 .doneList input[type="text"] {
     background-color: #d9d1ac;
     text-decoration: line-through;
     color: #a59f82;
+}
+
+.footer {
+    text-align: center;
+    z-index: -50;
 }

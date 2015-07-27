@@ -34,10 +34,10 @@ $(document).ready(function () {
         }
     };
     
-    var hideFooter = function () {
+    /*var hideFooter = function () {
         var fooTER = $('.site-Footer');
         fooTER.toggle();
-    };
+    };*/
     
     var unDone = function () {
         var notDone = $(this).parent(),
@@ -48,9 +48,9 @@ $(document).ready(function () {
         });
     };
     
-    $('.mainList').on('focus', 'li:last-child', addItem);
-    $('.listWrapper').on('focusin', '.textInp', hideFooter);
-    $('.listWrapper').on('focusout', '.textInp', hideFooter);
+    $('.mainList').on('keydown', 'li:last-child', addItem);
+    //$('.listWrapper').on('focusin', '.textInp', hideFooter);
+    //$('.listWrapper').on('focusout', '.textInp', hideFooter);
     $('.mainList').on('click', '.checkBox', itemDone);
     $('.mainList').on('click', '.remItem', delItem);
     $('.doneList').on('click', '.checkBox', unDone);
